@@ -1,0 +1,53 @@
+/* Artfully masterminded by ZURB  */
+
+.top-bar {
+    height: auto;
+}
+
+header { background-color: #2ba6cb; padding: 22px 0; }
+
+header h1 { color: #fff; font-weight: 500; }
+
+#top-bar {
+background: #000;
+}
+
+#newsletter {
+background: #EEE;
+padding: 11px 0 0 0;
+margin-top: 30px;
+}
+
+#copyright {
+background: #3F3F3F;
+color: white;
+padding: 11px 0;
+}
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+
+
+
+/* -----------------------------------------
+   Page Name 1
+----------------------------------------- */
+
+
+
+
+/* -----------------------------------------
+   Page Name 2
+----------------------------------------- */
+
+

@@ -1,0 +1,277 @@
+﻿@{
+    
+}
+
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Bizzy Bee</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+                        
+    <!-- Included CSS Files -->
+	<link rel="stylesheet" href="~/public/foundation/stylesheets/foundation.css">
+    <link rel="stylesheet" href="~/public/foundation/stylesheets/app.css">
+
+	<script src="~/public/foundation/javascripts/modernizr.foundation.js"></script>
+
+
+</head>
+<body>
+        @*<div>
+            Company Name: <br />
+            <input type="text" data-bind="value:companyName" /><br />
+            Tag Line: <br />
+            <input type="text" data-bind="value:tagLine" />
+        </div>
+
+        <nav data-bind="style: {background: 'rgb(157, 213, 58)'}">
+            <ul>
+                <li>Home</li>
+                <li>Link 1</li>
+                <li>Link 2</li>
+                <li>Link 3</li>
+            </ul>
+        </nav>
+        <nav data-bind="style: {background: '-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(157,213,58,1)), color-stop(50%,rgba(161,213,79,1)), color-stop(51%,rgba(128,194,23,1)), color-stop(100%,rgba(124,188,10,1)))'}">
+            <ul>
+                <li>Home</li>
+                <li>Link 1</li>
+                <li>Link 2</li>
+                <li>Link 3</li>
+            </ul>
+        </nav>
+        <nav data-bind="gradientBinding: {background: 'rgb(157, 999, 58)'}">
+            <ul>
+                <li>Home</li>
+                <li>Link 1</li>
+                <li>Link 2</li>
+                <li>Link 3</li>
+            </ul>
+        </nav>*@
+                @*<nav data-bind="gradientBinding: {background: '#067'}">
+            <ul>
+                <li>Home</li>
+                <li>Link 1</li>
+                <li>Link 2</li>
+                <li>Link 3</li>
+            </ul>
+        </nav>
+        <header data-bind="style: {background: '-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(157,213,58,1)), color-stop(50%,rgba(161,213,79,1)), color-stop(51%,rgba(128,194,23,1)), color-stop(100%,rgba(124,188,10,1)))'}">
+            <h1 data-bind="text: companyName"></h1>
+        </header>
+*@
+
+    <div id="top-bar">
+        <div class="row">
+          <div class="twelve columns">
+            <nav class="top-bar">
+              <ul>
+                <!-- Title Area -->
+                <li class="name">
+                  <h1>
+                    <a href="#">
+                      Top Bar Title
+                    </a>
+                  </h1>
+                </li>
+                <li class="toggle-topbar"><a href="#"></a></li>
+              </ul>
+
+              <section>
+                <!-- Left Nav Section -->
+                <ul class="left">
+                  <li class="divider"></li>
+                  <li>
+                    <a class="active" href="#">Item 1</a>
+                  </li>
+                    <li>
+                    <a class="active" href="#">Item 2</a>
+                  </li>
+                    <li>
+                    <a class="active" href="#">Item 3</a>
+                  </li>
+                                <li>
+                    <a class="active" href="#">Item 4</a>
+                  </li>
+                  <li class="divider hide-for-small"></li>
+                </ul>
+
+                <!-- Right Nav Section -->
+                <ul class="right">
+                  <li class="divider show-for-medium-and-up"></li>
+                  <li>
+                    <a href="#">Item 2</a>
+                  </li>
+                </ul>
+              </section>
+            </nav>
+          </div>
+        </div>
+    </div>
+
+    <header data-bind="style: { background: csstext }">
+        <div class="row">
+          <div class="twelve columns">
+            <h1 data-bind="text: companyName"></h1>
+            <h4></h4>
+          </div>
+        </div>
+    </header>
+
+    <footer class="row">
+        <section class="four columns">
+          <h6><strong>About Us</strong></h6>
+          <p>Wes anderson intelligentsia twee, banksy marfa echo park irure photo booth try-hard pop-up organic sapiente before they sold out pitchfork. Cardigan duis trust fund, VHS brooklyn pinterest ethnic viral locavore iphone. Brooklyn next level pug vegan, in wes anderson dreamcatcher brunch. Esse nostrud banjo, laborum craft beer ad skateboard vegan trust fund high life beard ea duis aliqua umami. Blue bottle VHS wayfarers, selvage williamsburg deep v banksy dolor adipisicing laboris post-ironic. Aesthetic sustainable anim, leggings tonx reprehenderit stumptown ullamco. Et intelligentsia single-origin coffee sint, cardigan williamsburg odio veniam wes anderson.<a href="#"><span data-bind="text: companyName"></span> Info and Goodies &rarr;</a></p>
+        </section>
+
+        <section class="four columns">
+          <h6><strong>Recent News</strong></h6>
+          <p>Wes anderson intelligentsia twee, banksy marfa echo park irure photo booth try-hard pop-up organic sapiente before they sold out pitchfork. Cardigan duis trust fund, VHS brooklyn pinterest ethnic viral locavore iphone.</p>
+        </section>
+
+        <section class="four columns">
+          <h6><strong>Contact Us</strong></h6>
+          <p class="support">Wes anderson intelligentsia twee, banksy marfa echo park irure photo booth try-hard pop-up organic sapiente before they sold out pitchfork. Cardigan duis trust fund, VHS brooklyn pinterest ethnic viral locavore iphone. <a href="#">Support page</a>.</p>
+        </section>
+      </footer>
+        
+    <div id="newsletter">
+        <div class="row">
+
+            <div class="eight columns">
+                <h5 data-bind="text: tagLine"></h5>
+            </div>
+
+            <div class="four columns">
+                <div class="row collapse">
+                    <form method="post">
+                    <div class="eight mobile-three columns">
+                        <input type="text" name="email" placeholder="signup@example.com">            </div>
+                                <div class="four mobile-one columns">
+                        <input type="submit" href="#" class="postfix small button expand" value="Sign Up">
+                    </div>
+                                </form>
+                </div>
+            </div>
+        </div>
+  </div>
+
+    <div id="copyright" data-bind="style: { background: copyrightBackground }">
+        <div class="row">
+          <div class="four columns">
+            <p>Site content &copy; 2012 <span data-bind="text: companyName"></span>, inc.</p>
+          </div>
+          <div class="eight columns">
+            <ul class="inline-list right">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Subscribe to the <span data-bind="text: companyName"></span> blog.</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    <div id="references">
+        <ul>
+            <li><a href="http://colorzilla.com/gradient-editor/">ColorZilla</a></li>
+            <li><a href="http://www.patternify.com/">Patternify</a></li>
+            <li><a href="https://kuler.adobe.com/#themes/rating?time=30">Adobe Kuler</a></li>            
+        </ul>        
+    </div>
+
+    <script src="~/public/scripts/jquery-1.8.3.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.0.js"></script>
+    <script>
+        /*
+        ko.bindingHandlers.gradientBinding = {
+            @*init: function(element, valueAccessor, allBindingsAccessor, viewModel, bindingContext) {
+                // This will be called when the binding is first applied to an element
+                // Set up any initial state, event handlers, etc. here
+            },*@
+            update: function (element, valueAccessor) {
+                var value = ko.utils.unwrapObservable(valueAccessor() || {});
+                console.dir(value);
+
+                for (var styleName in value) {
+                    console.dir(styleName);
+
+                    if (typeof styleName == "string") {
+                        console.dir(value[styleName]);
+                        var styleValue = ko.utils.unwrapObservable(value[styleName]);
+                        console.dir(styleValue);
+                        //element.style[styleName] = styleValue || ""; // Empty string removes the value, whereas null/undefined have no effect
+
+                        $(element).css(styleName, styleValue);
+                    }
+                }
+            }
+            @*update: function(element, valueAccessor, allBindingsAccessor, viewModel, bindingContext) {
+                // This will be called once when the binding is first applied to an element,
+                // and again whenever the associated observable changes value.
+                // Update the DOM element based on the supplied values here.
+            }*@
+        };
+        */
+
+        var util = util || {};
+
+        //data:image/png;base64,
+        util.patterns = ['iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2NkQAX/GZH4/4FsRpgAmAOSBBFwDkgAAIKuBATRTAAZAAAAAElFTkSuQmCC',
+                         'iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJElEQVQIW2NkwAT/GdHE/gP5jMiCYAGQIpggTACuEq4CatR/ABtJBwTL3L3TAAAAAElFTkSuQmCC',
+                         'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAaklEQVQYV2NkYGAwBuKzQAwC9UA8C4ifQ/n/GaEMkCIfIG6E8iWB9DMgZoQpAOncgmTSfyBbCmQSSAFIEqYTZNIZkE6YSSAGyDi4nUC2CbKb4CphdqK7CaYAbieSb8BuAikASSKblIbsJgCKXBfTNjWx1AAAAABJRU5ErkJggg==',  
+                         'iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAPklEQVQYV2NkwAT/gUKM6MLoAjBFGIqRFaJLovBhCrFaB7QeLg5SiEsRzJlgeQxHY/EcSOg/sQoxgwGHiQwA+f4KCL3Y/AQAAAAASUVORK5CYII=',
+                         'iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=',
+                         'iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAANklEQVQYV2NkIAIwEqHmPyFF/4GGMBJSBLYIlyKwCTCnYFOEogCfSSj+QTYJwwR063AqACkEAGnjBgmbf5VOAAAAAElFTkSuQmCC',
+                         'iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUElEQVQYV2NkYGAwBuKzQAwDID4IoIgxIikAMZE1oRiArBDdZBSNMIXoJiFbDZYDKcSmCOYimDuNSVKIzRNYrUYOFuQgweoZbIoxgoeoAAcAEckW11HVTfcAAAAASUVORK5CYII='];
+
+        util.gradients = ['-webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f1f1f1), color-stop(51%,#e1e1e1), color-stop(100%,#f6f6f6);',
+                        '-webkit-gradient(linear, left top, left bottom, color-stop(0%,#d4e4ef), color-stop(100%,#86aecc))',
+                        '-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(122,188,255,1)), color-stop(44%,rgba(96,171,248,1)), color-stop(100%,rgba(64,150,238,1)))',
+                        '-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(174,188,191,1)), color-stop(50%,rgba(110,119,116,1)), color-stop(51%,rgba(10,14,10,1)), color-stop(100%,rgba(10,8,9,1)))'];
+
+
+        $(function () {
+            
+            var patterns = [''];
+
+            var GradientGenerator = function () {
+                this.getGradientText = function () {
+                    return "background: rgb(157, 213, 58);background: -moz-linear-gradient(top, rgba(157, 213, 58, 1)0 % , rgba(161, 213, 79, 1)50 % , rgba(128, 194, 23, 1)51 % , rgba(124, 188, 10, 1)100 % );background: -webkit-gradient(linear, lefttop, leftbottom, color-stop(0 % , rgba(157, 213, 58, 1)), color-stop(50 % , rgba(161, 213, 79, 1)), color-stop(51 % , rgba(128, 194, 23, 1)), color-stop(100 % , rgba(124, 188, 10, 1)));background: -webkit-linear-gradient(top, rgba(157, 213, 58, 1)0 % , rgba(161, 213, 79, 1)50 % , rgba(128, 194, 23, 1)51 % , rgba(124, 188, 10, 1)100 % );background: -o-linear-gradient(top, rgba(157, 213, 58, 1)0 % , rgba(161, 213, 79, 1)50 % , rgba(128, 194, 23, 1)51 % , rgba(124, 188, 10, 1)100 % );background: -ms-linear-gradient(top, rgba(157, 213, 58, 1)0 % , rgba(161, 213, 79, 1)50 % , rgba(128, 194, 23, 1)51 % , rgba(124, 188, 10, 1)100 % );background: linear-gradient(tobottom, rgba(157, 213, 58, 1)0 % , rgba(161, 213, 79, 1)50 % , rgba(128, 194, 23, 1)51 % , rgba(124, 188, 10, 1)100 % );filter: progid: DXImageTransform.Microsoft.gradient(startColorstr = '#9dd53a', endColorstr = '#7cbc0a', GradientType = 0);";
+                }
+            }
+
+            // View model
+            var BizSite = function () {
+                this.companyName = ko.observable("[Company Name]");
+                this.tagLine = ko.observable("[Tag Line]");
+
+                this.copyrightBackground = ko.observable("url(data:image/png;base64," + util.patterns[0] +" ) repeat");
+
+                this.csstext = ko.observable("-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(157,213,58,1)), color-stop(50%,rgba(161,213,79,1)), color-stop(51%,rgba(128,194,23,1)), color-stop(100%,rgba(124,188,10,1)))");
+                this.csstext = ko.observable(util.gradients[3]);
+
+                @*this.gradient = function () {
+                    this.startColor = function () {
+                        return "background: rgb(157, 213, 58);background: -moz-linear-gradient(top, rgba(157, 213, 58, 1)0 % , rgba(161, 213, 79, 1)50 % , rgba(128, 194, 23, 1)51 % , rgba(124, 188, 10, 1)100 % );background: -webkit-gradient(linear, lefttop, leftbottom, color-stop(0 % , rgba(157, 213, 58, 1)), color-stop(50 % , rgba(161, 213, 79, 1)), color-stop(51 % , rgba(128, 194, 23, 1)), color-stop(100 % , rgba(124, 188, 10, 1)));background: -webkit-linear-gradient(top, rgba(157, 213, 58, 1)0 % , rgba(161, 213, 79, 1)50 % , rgba(128, 194, 23, 1)51 % , rgba(124, 188, 10, 1)100 % );background: -o-linear-gradient(top, rgba(157, 213, 58, 1)0 % , rgba(161, 213, 79, 1)50 % , rgba(128, 194, 23, 1)51 % , rgba(124, 188, 10, 1)100 % );background: -ms-linear-gradient(top, rgba(157, 213, 58, 1)0 % , rgba(161, 213, 79, 1)50 % , rgba(128, 194, 23, 1)51 % , rgba(124, 188, 10, 1)100 % );background: linear-gradient(tobottom, rgba(157, 213, 58, 1)0 % , rgba(161, 213, 79, 1)50 % , rgba(128, 194, 23, 1)51 % , rgba(124, 188, 10, 1)100 % );filter: progid: DXImageTransform.Microsoft.gradient(startColorstr = '#9dd53a', endColorstr = '#7cbc0a', GradientType = 0);";
+                    }
+                    this.csstext = ko.computed(function () { 
+                        return this.startColor();
+                    }, this);
+                }*@
+            }
+
+            ko.applyBindings(new BizSite());
+        });
+
+    </script>
+</body>
+</html>
